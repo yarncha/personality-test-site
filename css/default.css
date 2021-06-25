@@ -1,9 +1,9 @@
 /* 파일에 전체적으로 영향 가는 css 코딩할 부분 */
 
-*{
-    font-family: 'Noto Serif KR', serif;
+* {
+  font-family: "Noto Serif KR", serif;
 }
 
-body{
-    background-color: bisque;
+body {
+  background-color: bisque;
 }

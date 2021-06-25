@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- 부트스트랩 사용 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- 폰트 사용 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/qna.css">
     <link rel="stylesheet" href="./css/animation.css">
-
 </head>
 
 <body>
@@ -25,14 +26,21 @@
                 <img src="./img/main.png" alt="mainImage" class="img-fluid">
             </div>
             <p>나만의 MBTI 사이트입니다!<br>아래 시작하기 버튼을 눌러 시작해 주십시오.</p>
+            <!-- 시작하기 버튼 클릭 시 js에서 begin()함수 실행 -->
             <button type="button" class="btn btn-outline-danger mt-3" onclick="js:begin()">시작하기</button>
-
         </section>
         <section id="qna">
-            <p>test</p>
+            <div class="status mx-auto mt-5">
+                <div class="statusBar"></div>
+            </div>
+            <div class="qBox my-5 py-3 mx-auto"></div>
+            <div class="answerBox">
 
+            </div>
         </section>
         <section id="result"></section>
+        <!-- start.js에서 data.js의 질답 객체들을 사용하고 있으므로 한칸 위에서 선언해줌 -->
+        <script src="./js/data.js" charset="utf-8"></script>
         <script src="./js/start.js" charset="utf-8"></script>
     </div>
 </body>
