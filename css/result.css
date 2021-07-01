@@ -1,0 +1,30 @@
+#result {
+  display: none;
+  background-color: burlywood;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.resultName {
+  font-size: 26px;
+}
+
+.resultDesc {
+  font-size: 20px;
+}
+
+.kakao {
+  color: white;
+  background-color: #fee500;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+/* 버튼임을 좀더 확실히 보여주기 위해 커서를 올렸을 때와 클릭되었을 때 효과 설정 */
+.kakao:hover,
+.kakao:focus {
+  background-color: whitesmoke;
+  color: #fee500;
+}

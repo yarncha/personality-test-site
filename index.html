@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/qna.css">
     <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/result.css">
 </head>
 
 <body>
     <div class="container">
-        <section id="main" class="mx-auto mt-5 py-5 px-3">
+        <section id="main" class="mx-auto my-5 py-5 px-3">
             <h1 class="">십이간지로 알아보는 연애유형</h1>
             <div class="col-lg-6 col-md-6 col-sm-6 col-12 mx-auto">
                 <img src="./img/main.png" alt="mainImage" class="img-fluid">
@@ -38,7 +39,19 @@
 
             </div>
         </section>
-        <section id="result"></section>
+        <section id="result" class="mx-auto my-5 py-5 px-3">
+            <h1 class="">당신의 결과는?!</h1>
+            <div class="resultName">
+
+            </div>
+            <div id="resultImg" class="my-3 col-lg-6 col-md-6 col-sm-6 col-12 mx-auto">
+            </div>
+            <div class="resultDesc"></div>
+
+            <!-- 시작하기 버튼 클릭 시 js에서 begin()함수 실행 -->
+            <button type="button" class="kakao mt-3 py-2 px-3">공유하기</button>
+
+        </section>
         <!-- start.js에서 data.js의 질답 객체들을 사용하고 있으므로 한칸 위에서 선언해줌 -->
         <script src="./js/data.js" charset="utf-8"></script>
         <script src="./js/start.js" charset="utf-8"></script>
