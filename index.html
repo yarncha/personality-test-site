@@ -9,7 +9,7 @@
     <meta name="keywords" content="십이간지 연애유형">
 
     <!-- SNS로 공유할 때의 정보들 -->
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://personality-test.netlify.app/" />
     <meta property="og:title" content="십이간지 연애유형" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="img/share.png" />
@@ -32,6 +32,10 @@
     <link rel="stylesheet" href="./css/qna.css">
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/result.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+Kakao.isInitialized();
+    </script>
 </head>
 
 <body>
@@ -64,12 +68,13 @@
             <div class="resultDesc"></div>
 
             <!-- 시작하기 버튼 클릭 시 js에서 begin()함수 실행 -->
-            <button type="button" class="kakao mt-3 py-2 px-3">공유하기</button>
+            <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:kakaoShare()">공유하기</button>
 
         </section>
         <!-- start.js에서 data.js의 질답 객체들을 사용하고 있으므로 한칸 위에서 선언해줌 -->
         <script src="./js/data.js" charset="utf-8"></script>
         <script src="./js/start.js" charset="utf-8"></script>
+        <script src="./js/share.js" charset="utf-8"></script>
     </div>
 </body>
 
